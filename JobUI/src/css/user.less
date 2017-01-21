@@ -1,0 +1,30 @@
+@import "common";
+
+.user {
+  background: #fff;
+  .menu {
+    ul {
+      li {
+        height: 40px;
+        line-height: 40px;
+        padding-left: 20px;
+        border-bottom: 1px solid @def-border-color;
+        font-size: 16px;
+        cursor: pointer;
+        i{
+          margin-right: 10px;
+        }
+      }
+      li:hover{
+        color:@color-primary ;
+        border-left:3px solid @color-primary;
+        padding-left: 17px;
+      }
+      li.active{
+        color:@color-primary ;
+        border-left:3px solid @color-primary;
+        padding-left: 17px;
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+@import "common";
+.header {
+  height: 86px;
+  width: 100%;
+  .topbar {
+    height: 30px;
+    width: 100%;
+    background-color: #f4f4f4;
+    line-height: 30px;
+    font-size: 13px;
+    padding: 0 10px;
+    .rightbox{
+      float: right;
+      a{
+        cursor: pointer;
+      }
+      a:hover{
+        color: #3a3f51;
+      }
+    }
+  }
+  .header-conent{
+    height: 56px;
+    width: 100%;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    .headercon{
+      width: 1024px;
+      margin: 0 auto;
+      height: 100%;
+
+      line-height: 56px;
+      .logo {
+        position: relative;
+        height: 100%;
+        background-size: auto 100%;
+        width: 239px;
+        float: left;
+        .title{
+          font-size: 17px;
+          //margin-left: 140px;
+          //margin-top: 8px;
+          .changelocal{
+            font-size: 12px;
+            margin-left: 5px;
+            cursor: pointer;
+            color: #757575;
+          }
+          .changelocal:hover{
+            color: @link-hover-color;
+
+          }
+        }
+
+      }
+      .menubox{
+        float: left;
+        height: 100%;
+        margin-left: 45px;
+        margin-bottom: 2px;
+        ul li{
+          float: left;
+          margin-right: 10px;
+          margin-left: 10px;
+          font-size: 17px;
+          font-weight: 700;
+          line-height: 54px;
+          cursor: pointer;
+          a{
+            color: #909090 !important;
+            padding-left: 10px;
+            padding-right: 10px;
+            display: block;
+          }
+
+        }
+        ul li:hover{
+          a{
+            color: @color-primary !important;
+          }
+
+          border-bottom: 3px solid @color-primary;
+        }
+        ul li.active{
+          a{
+            color: @color-primary !important;
+          }
+
+          border-bottom: 3px solid @color-primary;
+        }
+      }
+    }
+
+  }
+}
+.logocitylist{
+  width: 300px;
+  ul li{
+    float: left;
+    margin: 5px;
+    a{
+      padding: 5px;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+  }
+  ul li:hover{
+    a{
+      color:#fff;
+      background:  @color-primary;
+    }
+
+
+  }
+}

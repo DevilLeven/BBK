@@ -1,0 +1,36 @@
+@import "common";
+.send{
+  .el-tabs{
+    width: 100%;
+    margin-top: 10px;
+  }
+  .el-tabs__item.is-active{
+    color: @color-primary;
+  }
+  .el-tabs--border-card{
+    border: none;
+    border-top:1px solid @def-border-color;
+  }
+  .el-tabs--border-card .el-tabs__item.is-active:first-child{
+    border-left-color: transparent;
+  }
+  .el-card, .el-menu--horizontal .el-submenu>.el-menu, .el-tabs--border-card{
+    box-shadow: none;
+  }
+  .el-tabs--border-card .el-tabs__content{
+    padding: 0;
+    min-height: 700px;
+  }
+  .jobList{
+    height: 136px;
+  }
+  .noItem {
+    padding: 60px 0 110px;
+    font-size: 16px;
+    color: #999;
+    line-height: 36px;
+    text-align: center;
+    overflow: hidden;
+
+  }
+}

@@ -1,0 +1,275 @@
+@import "common";
+
+.content{
+  width: 1024px;
+  margin: 10px auto;
+  position: relative;
+  .leftbox{
+    width: 240px;
+    margin-top: 20px;
+    position: absolute;
+    .sideBox{
+      color: @text-def-color;
+      position: relative;
+      height: 110px;
+      border-bottom: 1px solid #eee;
+      background: #fff;
+      .sideMen{
+        height: 109px;
+        padding: 8px 13px 12px;
+        position: relative;
+        overflow: hidden;
+        z-index: 5;
+        display: block;
+        border: 2px solid #fff;
+        background-color: #fff;
+        i{
+          position: absolute;
+          top: 16px;
+          right: 28px;
+        }
+        .tit{
+          height: 34px;
+          line-height: 34px;
+          width: 100%;
+          font-size: 17px;
+        }
+        a{
+          padding-right: 12px;
+          margin: 0 5px;
+          line-height: 30px;
+          float: left;
+          white-space: nowrap;
+          //cursor: pointer;
+        }
+        //a:hover{
+        //  color: @link-hover-color;
+        //}
+      }
+      .sideMain {
+        width: 582px;
+        padding: 10px 22px 14px;
+        border: 2px solid #ddd;
+        background: #fff;
+        position: absolute;
+        left: 240px;
+        top: 0px;
+        z-index: 3;
+        display: none;
+        min-height: 110px;
+        max-height: 400px;
+        overflow-y: auto;
+        .tit{
+          height: 34px;
+          line-height: 34px;
+          font-size: 17px;
+          width: 100%;
+          padding-left: 3px;
+          font-weight: bold;
+        }
+        .alink{
+          overflow: hidden;
+          margin: 0 0 10px -8px;
+          border-bottom: 1px dashed #e9e9e9;
+          padding-bottom: 14px;
+          a{
+            padding: 0 13px;
+            background: url(../assets/line-icon.png) no-repeat 0 8px;
+            margin-left: -1px;
+            line-height: 26px;
+            float: left;
+            white-space: nowrap;
+            cursor: pointer;
+          }
+          a:hover{
+            color: @link-hover-color;
+          }
+        }
+        .alinkNor{
+          border-bottom: 0;
+          padding-bottom: 0;
+          margin-bottom: 0;
+        }
+      }
+    }
+    .sideBox:hover{
+      .sideMain{
+        display: block;
+      }
+      .sideMen{
+        border: 2px solid #ddd;
+        border-right: none;
+      }
+    }
+  }
+  .rightbox{
+    position: relative;
+    padding-top: 20px;
+    left: 256px;
+    right: 0;
+    width: 768px;
+    .baner{
+      width: 100%;
+      height: 300px;
+      position: relative;
+      .my-slide{
+        width: 100%;
+        height: 100%;
+        .slide{
+          width: 100%;
+          height: 100%;
+          img{
+            width: 100%;
+          }
+        }
+      }
+      .bar-pre{
+        position: absolute;
+        width: 40px;
+        background: url("../assets/pre.png") no-repeat;
+        background-size: 100% auto;
+        top:130px;
+        left: 10px;
+        cursor: pointer;
+        height: 40px;
+        display: none;
+      }
+      .bar-next{
+        position: absolute;
+        width: 40px;
+        background: url("../assets/next.png") no-repeat;
+        background-size: 100% auto;
+        top:130px;
+        right: 10px;
+        cursor: pointer;
+        height: 40px;
+        display: none;
+      }
+
+    }
+    .baner:hover{
+      .bar-next,.bar-pre{
+        display: block;
+      }
+    ;
+    }
+
+
+
+
+    .Advebox{
+      margin-top: 10px;
+      margin-bottom: 35px;
+      width: 100%;
+      height: 190px;
+
+        ul {
+          width: 100%;
+          height: 100%;
+          li {
+            height: 95px;
+            float: left;
+            width: 192px;
+            border-right: 1px solid @def-border-color;
+            border-bottom: 1px solid @def-border-color;
+            background: #fff;
+            cursor: pointer;
+            text-align: center;
+            position: relative;
+          }
+          li img{
+            position: relative;
+            top: 50%;
+            -webkit-transform:translateY(-50%) ;
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+          }
+          li:hover{
+            z-index: 1;
+            box-shadow: 0px 0px 8px rgba(136, 136, 136, 0.5);
+            -moz-box-shadow: 0px 0px 8px rgba(136, 136, 136, 0.5);
+            -webkit-box-shadow: 0px 0px 8px rgba(136, 136, 136, 0.5);
+            transform: scale(1.02);
+            -moz-transform: scale(1.02);
+            -webkit-transform: scale(1.02);
+            transition: all .3s;
+            -moz-transition: all .3s;
+            -webkit-transition: all .3s;
+          }
+        }
+    }
+
+    .dfbox{
+      width: 100%;
+    }
+  }
+  .homesearchbox{
+    width: 100%;
+    height: 85px;
+    .searchinut{
+      width: 618px;
+      height: 36px;
+      line-height: 23px;
+      float: left;
+      font-size: 16px;
+      padding: 5px 8px 5px 10px;
+      margin: 0;
+      border: 2px solid @color-primary;
+      border-right: 0;
+      color: @text-def-color;
+      outline:none;
+    }
+    .searchbtn{
+      height: 36px;
+      width: 150px;
+      color: #FFF;
+      font-size: 18px;
+      border: 2px solid @color-primary;
+      background: @color-primary;
+      float: right;
+      cursor: pointer;
+    }
+    .hotsraech{
+      height: 49px;
+      line-height: 49px;
+      overflow: hidden;
+      width: 100%;
+      .hslist{
+        margin-right: 20px;
+        float: left;
+        cursor: pointer;
+      }
+      .hslist:hover{
+        color: @link-hover-color;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.loadmorebox{
+  line-height: 40px;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+}
+.homesearchbox{
+  .el-input{
+    input{
+      height: 36px;
+      border: 2px solid @color-primary;
+      border-right: none;
+      border-radius: 0;
+      padding-left: 9px;
+      font-size: 13px;
+    }
+  }
+  .el-select .el-input__inner:focus {
+    border-color: @color-primary;
+  }
+  .el-select:hover .el-input__inner {
+    border-color: @color-primary;
+  }
+}

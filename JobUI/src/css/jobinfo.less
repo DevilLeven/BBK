@@ -1,0 +1,116 @@
+@import "common";
+.cardtitle{
+  line-height: 36px;
+  font-size: 21px;
+  font-weight: 600;
+  color: @title-color;
+}
+.jobinfo {
+  font-size: 15px;
+  font-weight: bold;
+  .money{
+    color: @color-primary;
+    font-size: @title-fontsize;
+    font-weight: 600;
+  }
+  .date{
+    font-size: 13px;
+    color: @text-def-color;
+    margin-left: 20px;
+  }
+  .titbtn{
+    position: absolute;
+    right: 45px;
+    top: 36px;
+  }
+  .baseinfo{
+
+    .box{
+      padding: 10px 0;
+      .tl{
+        color: @gr-color;
+        width: 98px;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .intex{
+        width: 610px;
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        .tips{
+          span{
+            border: 1px solid @def-border-color;
+            margin-right: 10px;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-size: 14px;
+            display: inline-block;
+            margin-bottom: 3px;
+          }
+        }
+      }
+    }
+    .phone{
+      font-size: @title-fontsize;
+      color: @color-primary;
+    }
+  }
+  .detil{
+    margin-top: 20px;
+    border-bottom: 1px solid @def-border-color;
+    position: relative;
+    .tit{
+      font-size: 21px;
+      margin-left: 10px;
+      line-height: 50px;
+      width: 150px;
+    }
+    .opt{
+      position: absolute;
+      right: 20px;
+      top:20px;
+
+      .shoucang{
+        color: @color-primary;
+        cursor: pointer;
+        i{
+          margin-right: 5px;
+        }
+      }
+
+    }
+
+  }
+  .infotext{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 35px;
+  }
+}
+.jobinfocom{
+  .company-logo{
+    text-align: center;
+    img{
+      //border-radius: 50%;
+    }
+  }
+  .poster-common-header{
+    margin-top: 30px;
+    .head{
+      background: #fff;
+      width: 68px;
+      margin: -12px auto;
+    }
+    .cmtext{
+      margin-top: 30px;
+      text-align: left;
+    }
+  }
+}
+
+.line{
+  width: 100%;
+  height: 1px;
+  background: @def-border-color;
+}

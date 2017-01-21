@@ -1,0 +1,10 @@
+.DS_Store
+JobUI/node_modules/
+JobUI/npm-debug.log
+JobUI/test/
+companyUI/node_modules/
+companyUI/npm-debug.log
+companyUI/test/
+DBAppUI/node_modules/
+DBAppUI/npm-debug.log
+DBAppUI/test/
